@@ -1,5 +1,3 @@
-const read = async () => {
-    // Write your code here 
-};
+const read = async () => {};
 
 await read();
