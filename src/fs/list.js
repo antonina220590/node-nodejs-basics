@@ -13,7 +13,7 @@ const list = async () => {
     const files = await fs.readdir(folder_path);
     console.log(files);
   } catch (error) {
-    if (error.code === "ENOENT" || error.code === "ENODIR") {
+    if (error.code === "ENOENT" || error.code === "ENOTDIR") {
       throw new Error(error_message);
     } else {
       console.error(`Error reading directory: ${error.message}`);
